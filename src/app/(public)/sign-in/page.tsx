@@ -12,7 +12,7 @@ export default function SignInPage() {
   return (
     <div className="flex h-full">
       <div className="bg-muted dark:bg-background grid size-full place-items-center">
-        <div className="space-y-6 flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center space-y-6">
           <div className="space-y-2">
             <h1 className="font-heading text-4xl font-semibold">
               Bem vindo de volta!
@@ -93,6 +93,8 @@ export default function SignInPage() {
             </HighlightContent>
           </HightlightRoot>
         </div>
+
+        <span className="text-sm text-muted-foreground">&copy; by ConnectaSistemas</span>
       </div>
     </div>
   );
