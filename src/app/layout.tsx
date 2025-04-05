@@ -10,7 +10,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className="dark font-body h-dvh">{children}</body>
+      <body className="dark font-body h-dvh" suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   );
 }

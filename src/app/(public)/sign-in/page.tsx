@@ -6,12 +6,27 @@ import {
   HighlightTitle,
   HightlightRoot,
 } from "./components/highlight";
+import { SignInForm } from "./components/sign-in-form";
 
 export default function SignInPage() {
   return (
     <div className="flex h-full">
-      <div className="size-full" />
-      <div className="dark:from-fg from-bg to-primary/25 flex size-full flex-col justify-center gap-8 bg-gradient-to-r px-8">
+      <div className="bg-muted dark:bg-background flex size-full items-center justify-center">
+        <div className="w-full max-w-96 space-y-6">
+          <div className="space-y-2">
+            <h1 className="font-heading text-4xl font-semibold">
+              Bem vindo de volta!
+            </h1>
+            <p className="text-muted-foreground">
+              Entre com suas credenciais para acessar o sistema
+            </p>
+          </div>
+
+          <SignInForm />
+        </div>
+      </div>
+
+      <div className="from-muted dark:from-background to-primary/25 flex size-full flex-col justify-center gap-8 bg-gradient-to-r px-8">
         <div className="space-y-4">
           <div className="space-y-2">
             <h1 className="font-heading text-foreground text-3xl font-bold">
@@ -32,7 +47,7 @@ export default function SignInPage() {
         <div className="grid max-w-[600px] grid-cols-2 gap-2">
           <HightlightRoot>
             <HighlightIcon>
-              <CheckCircle />
+              <CheckCircle size={22} />
             </HighlightIcon>
             <HighlightContent>
               <HighlightTitle>Gestão de Clientes</HighlightTitle>
@@ -44,7 +59,7 @@ export default function SignInPage() {
 
           <HightlightRoot>
             <HighlightIcon>
-              <Shield />
+              <Shield size={22} />
             </HighlightIcon>
             <HighlightContent>
               <HighlightTitle>Segurança</HighlightTitle>
@@ -56,7 +71,7 @@ export default function SignInPage() {
 
           <HightlightRoot>
             <HighlightIcon>
-              <AlertCircle />
+              <AlertCircle size={22} />
             </HighlightIcon>
             <HighlightContent>
               <HighlightTitle>Simulação FGTS</HighlightTitle>
@@ -68,7 +83,7 @@ export default function SignInPage() {
 
           <HightlightRoot>
             <HighlightIcon>
-              <Clipboard />
+              <Clipboard size={22} />
             </HighlightIcon>
             <HighlightContent>
               <HighlightTitle>Contratos</HighlightTitle>

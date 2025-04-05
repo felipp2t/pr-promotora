@@ -6,7 +6,7 @@ export const HightlightRoot = ({ children }: { children: React.ReactNode }) => {
 
 export const HighlightIcon = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="dark:bg-primary/50 bg-primary flex size-fit items-center justify-center rounded-full p-1.5 text-white">
+    <div className="bg-primary flex size-10 items-center justify-center rounded-full p-1.5 text-white">
       {children}
     </div>
   );
