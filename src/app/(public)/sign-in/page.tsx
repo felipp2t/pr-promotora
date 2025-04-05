@@ -11,8 +11,8 @@ import { SignInForm } from "./components/sign-in-form";
 export default function SignInPage() {
   return (
     <div className="flex h-full">
-      <div className="bg-muted dark:bg-background flex size-full items-center justify-center">
-        <div className="w-full max-w-96 space-y-6">
+      <div className="bg-muted dark:bg-background grid size-full place-items-center">
+        <div className="space-y-6 flex flex-col items-center justify-center">
           <div className="space-y-2">
             <h1 className="font-heading text-4xl font-semibold">
               Bem vindo de volta!
@@ -26,7 +26,7 @@ export default function SignInPage() {
         </div>
       </div>
 
-      <div className="from-muted dark:from-background to-primary/25 flex size-full flex-col justify-center gap-8 bg-gradient-to-r px-8">
+      <div className="from-muted dark:from-background to-primary/25 hidden size-full flex-col justify-center gap-8 bg-gradient-to-r px-8 xl:flex">
         <div className="space-y-4">
           <div className="space-y-2">
             <h1 className="font-heading text-foreground text-3xl font-bold">
