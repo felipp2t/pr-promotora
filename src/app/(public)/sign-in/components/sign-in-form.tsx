@@ -39,7 +39,7 @@ export const SignInForm = () => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 w-full">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-4">
         <FormField
           control={form.control}
           name="email"
@@ -83,11 +83,13 @@ export const SignInForm = () => {
 
                   {showPassword ? (
                     <Eye
+                      size={20}
                       className="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer"
                       onClick={() => setShowPassword(!showPassword)}
                     />
                   ) : (
                     <EyeOff
+                      size={20}
                       className="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer"
                       onClick={() => setShowPassword(!showPassword)}
                     />
